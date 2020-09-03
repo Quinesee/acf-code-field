@@ -11,6 +11,7 @@
         var editor = window.CodeMirror.fromTextArea( $textarea[ 0 ], {
             lineNumbers: true,
             fixedGutter: false,
+            lineWrapping: true,
             mode: $textarea.attr( "mode" ),
             theme: $textarea.attr( "theme" ),
             extraKeys: { "Ctrl-Space": "autocomplete" },
